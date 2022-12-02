@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --simulator='iPhone 14 Pro'",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint ."
@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "17.0.2",
     "react-native": "0.66.3",
-    "react-native-videoeditorsdk": "^2.13.1"
+    "react-native-videoeditorsdk": "^2.16.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

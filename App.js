@@ -64,7 +64,7 @@ const Section = ({children, title}): Node => {
 };
 
 const App: () => Node = () => {
-  const openEditor = () => {
+  const openEditor = async () => {
     // Set up sample video
     let video = require('./assets/Skater.mp4');
     // Set up configuration
@@ -156,7 +156,7 @@ const App: () => Node = () => {
         ]
       }
     };
-    VESDK.openEditor(video, configuration).then(
+    await VESDK.openEditor(video, configuration).then(
       (result) => {
         console.log(result);
       },
